@@ -19,9 +19,10 @@ body {
    text-align: center;
 
    color: white;
-   background: url(eugene-lim-260668.jpg);
+   background: url(tersius-van-rhyn-228779.jpg);
    background-color: black;
    background-repeat: no-repeat;
+   background-attachment: fixed;
    background-size: cover;
 }
 

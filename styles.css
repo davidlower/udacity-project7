@@ -9,51 +9,60 @@ html {
    font-family: 'Raleway', sans-serif;
    font-size: 12px;
    font-weight: 200;
-   /* --p-color: #0ed487; */
    --p-color: #ff1d3f;
    --shadow: #cbcbcb;
 }
 
 body {
-   background-color: black;
+   height: 100vh;
+
+   text-align: center;
+
+   color: white;
    background: url(tersius-van-rhyn-228779.jpg);
+   background-color: black;
    background-repeat: no-repeat;
    background-size: cover;
-   height: 100vh;
-   color: white;
-   text-align: center;
 }
 
 .container {
-   margin: 10% auto;
    width: 90%;
    max-width: 1000px;
-   max-height: 1000px;
+   height: 90%;
+   max-height: 1400px;
+   margin: 5% auto;
 }
 
 .logo-text {
-   margin: 5% auto 6%;
+   margin: 15% auto 5%;
+
    font-size: 1.8rem;
 }
 
 .logo-text span {
-   font-weight: 600;
    color: var(--p-color);
+
+   font-weight: 600;
 }
 
 ul li {
    display: inline-block;
-   font-size: 1.4rem;
+
    margin-right: 5%;
    padding-right: 5%;
-   border-right: solid 1px var(--p-color);
+
    cursor: pointer;
+
+   border-right: solid 1px var(--p-color);
+
+   font-size: 1.4rem;
 }
 
 ul li:last-child {
-   border-right: none;
-   padding-right: 0;
    margin-right: 0;
+   padding-right: 0;
+
+   border-right: none;
 }
 
 ul li:hover {
@@ -61,31 +70,35 @@ ul li:hover {
 }
 
 ul li:active {
+   -webkit-transform: translateY(1px);
    transform: translateY(1px);
 }
 
 h1 {
-   margin: 20% auto 10px;
-   font-size: 5rem;
-   font-weight: 200;
-   text-transform: uppercase;
+   margin: 20% auto 1%;
+
    letter-spacing: 0.1rem;
-   font-weight: 600;
+   text-transform: uppercase;
+
+   font-size: 5.4rem;
+   font-weight: 200;
 }
 
 .body-text {
+   margin: 0 25%;
+
    font-size: 1.4rem;
    line-height: 2.2rem;
-   margin: 0 25%;
 }
 
 button {
    position: relative;
+
    display: block;
 
    width: 200px;
    height: 50px;
-   margin: 20% auto 0;
+   margin: 25% auto 20%;
 
    cursor: pointer;
 
@@ -112,7 +125,12 @@ button:active {
 
 @media screen and (max-width: 930px) {
    h1 {
+      margin: 15% auto 0;
+
       font-size: 4.2rem;
+   }
+   button {
+      margin: 15% auto;
    }
 }
 
@@ -120,8 +138,42 @@ button:active {
    html {
       font-size: 10px;
    }
+   h1 {
+      font-weight: 200;
+   }
+
 }
 
-/* .body-text {
-   font-size: 1.4rem;
-} */
+@media screen and (max-width: 670px) {
+
+   .body-text {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .logo-text {
+      margin: 25% auto 10%;
+   }
+   h1 {
+      margin: 25% auto 0;
+   }
+   button {
+      margin: 25% auto;
+   }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+   .logo-text {
+      margin: 5% auto 2%;
+   }
+   .body-text {
+      width: 90%;
+      margin: 0 auto;
+   }
+   h1 {
+      width: 90%;
+      margin: 12.5% auto 0;
+   }
+   button {
+      margin: 10% auto;
+   }
+}

@@ -1,0 +1,98 @@
+* {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+html {
+   font-family: 'Raleway', sans-serif;
+   font-size: 14px;
+   font-weight: 200;
+   --p-color: #0ed487;
+   --shadow: #cbcbcb;
+}
+
+body {
+   background-color: black;
+   background: url(tersius-van-rhyn-228779.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+   color: white;
+   text-align: center;
+}
+
+.logo {
+   margin: 5% 0 6% 0;
+   font-size: 1.8rem;
+}
+
+.logo span {
+   font-weight: 600;
+   color: var(--p-color);
+}
+
+ul li {
+   display: inline-block;
+   font-size: 1.4rem;
+   margin-right: 5%;
+   padding-right: 5%;
+   border-right: solid 1px var(--p-color);
+   cursor: pointer;
+}
+
+ul li:hover {
+   color: var(--p-color);
+}
+
+ul li:last-child {
+   border-right: none;
+   padding-right: 0;
+   margin-right: 0;
+}
+
+h1 {
+   margin: 20% 10% 2%;
+   font-size: 5rem;
+   font-weight: 200;
+   text-transform: uppercase;
+}
+
+.body-text {
+   font-size: 1.6rem;
+   line-height: 2rem;
+   letter-spacing: 0.1rem;
+   margin: 0 30%;
+}
+
+button {
+   position: absolute;
+   left: 50%;
+
+   width: 200px;
+   height: 50px;
+   margin: 20% 0;
+
+   cursor: pointer;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+
+   color: white;
+   border: none;
+   border-radius: 5px;
+   outline: none;
+   background-color: var(--p-color);
+
+   font-size: 1.4rem;
+}
+
+button:hover {
+   -webkit-transform: translateX(-50%) scale(0.95);
+   transform: translateX(-50%) scale(0.95);
+}
+
+button:active {
+   -webkit-transform: translate(-50%, 1px) scale(0.95);
+   transform: translate(-50%, 1px) scale(0.95);
+}

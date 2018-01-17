@@ -65,6 +65,7 @@ ul li {
    border-right: solid 1px var(--p-color);
 
    font-size: 1.4rem;
+   text-decoration: none;
 }
 
 ul li:last-child {
@@ -136,38 +137,47 @@ button:active {
    width: 90%;
    max-width: 1000px;
    margin: 5% auto;
+
    background-color: pink;
 }
 
 h2 {
-   font-size: 1.8rem;
    display: block;
-   text-align: left;
+
    margin: 5% auto;
+
+   text-align: left;
+
    color: var(--p-color);
+
+   font-size: 1.8rem;
 }
 
 .card-container {
-   width: 350px;
    display: inline-block;
+
+   width: 350px;
+   padding: 25px;
+
    border-radius: 5px;
    background-color: rgba(255, 255, 255, 0.1);
-   padding: 25px;
 }
 
 h3 {
-   font-size: 1.4rem;
    margin-top: 15%;
+
+   font-size: 1.4rem;
 }
 
 .card-container i {
    margin: 15% auto;
+
    color: var(--p-color);
 }
 
 .card-container p {
-   margin: 0 auto 15%;
    width: 75%;
+   margin: 0 auto 15%;
 }
 
 .card-1 {
@@ -196,44 +206,72 @@ footer button {
    button {
       margin: 15% auto;
    }
-}
+   .card-container {
+      display: block;
+      width: 60%;
+      margin: 5% auto;
+   }
+   footer {
+      margin-top: 10%;
+   }
 
-@media screen and (max-width: 790px) {
-   html {
-      font-size: 10px;
+   @media screen and (max-width: 790px) {
+      html {
+         font-size: 10px;
+      }
+      body {
+         background-attachment: none;
+      }
+      .card-container {
+         width: 50%;
+      }
    }
-}
 
-@media screen and (max-width: 670px) {
+   @media screen and (max-width: 670px) {
 
-   .body-text {
-      width: 80%;
-      margin: 0 auto;
+      .body-text {
+         width: 80%;
+         margin: 0 auto;
+      }
+      .logo-text {
+         margin: 25% auto 10%;
+      }
+      h1 {
+         margin: 25% auto 0;
+      }
+      button {
+         margin: 25% auto;
+      }
+      .card-container {
+         width: 90%;
+         margin-top: 10%;
+      }
+      footer {
+         margin-bottom: 20%;
+      }
    }
-   .logo-text {
-      margin: 25% auto 10%;
-   }
-   h1 {
-      margin: 25% auto 0;
-   }
-   button {
-      margin: 25% auto;
-   }
-}
 
-@media screen and (max-width: 736px) and (orientation: landscape) {
-   .logo-text {
-      margin: 5% auto 2%;
+   @media screen and (max-width: 736px) and (orientation: landscape) {
+      .logo-text {
+         margin: 5% auto 2%;
+      }
+      h1 {
+         width: 90%;
+         margin: 12.5% auto 0;
+      }
+      .body-text {
+         width: 90%;
+         margin: 0 auto;
+      }
+      button {
+         margin: 10% auto;
+      }
+      .card-container {
+         display: inline-block;
+         margin-top: 0;
+         width: 42.5%;
+      }
+      .card-1 {
+         margin-right: 5%;
+      }
    }
-   .body-text {
-      width: 90%;
-      margin: 0 auto;
-   }
-   h1 {
-      width: 90%;
-      margin: 12.5% auto 0;
-   }
-   button {
-      margin: 10% auto;
-   }
-}

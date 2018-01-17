@@ -247,8 +247,12 @@ footer button {
          width: 90%;
          margin-top: 10%;
       }
+      footer button {
+         margin: 18% auto;
+      }
+
       footer {
-         margin-bottom: 20%;
+         margin: 10% auto;
       }
    }
 

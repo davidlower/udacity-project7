@@ -254,7 +254,7 @@ footer {
 
 @media screen and (max-width: 450px) {
    body {
-      background-attachment: none;
+      background-attachment: scroll;
    }
    h1 {
       font-size: 3.8rem;
